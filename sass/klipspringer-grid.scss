@@ -1,0 +1,246 @@
+// Variables
+$full: 100%;
+$half: $full/2;
+$third: $full/3;
+$quarter: $full/4;
+$fifth: $full/5;
+$sixth: $full/6;
+$seventh: $full/7;
+$eighth: $full/8;
+
+/*	Wrappers and Buttons - 
+-------------------------------------------------------------------------------------------------------*/
+
+.ssklip-wrapper-outer {
+	display: none; // Do not change
+	z-index: 10000; // Do not change
+	position: absolute; // Do not change
+	top: 0; // Do not change
+	right: 0; // Do not change
+	bottom: 0; // Do not change
+	left: 0; // Do not change
+}
+
+.ssklip-button-close {
+	display: block; // Do not change
+	position: absolute; // Do not change
+	text-decoration: none; // Do not change
+}
+
+/*	Grid System - Percentage based
+	Spans cause the containers to spanX columns. nth-child declarations are clearfixes.
+-------------------------------------------------------------------------------------------------------*/
+.ssklip-wrapper-inner {
+	box-sizing: border-box; // Do not change
+	-moz-box-sizing: border-box; // Do not change
+	-webkit-box-sizing: border-box; // Do not change
+	margin: 0px auto; // Do not change
+	height: 100%; // MUST remain 100%
+	position: relative; // Do not change
+	overflow: hidden; // Do not change
+	
+	
+	.widget {
+		margin-bottom: 30px;
+	}
+		
+	.col2, 
+	.col3, 
+	.col4, 
+	.col5, 
+	.col6, 
+	.col7, 
+	.col8 {
+		display: inline;
+		float: left;
+		box-sizing: border-box; // Do not change
+		-moz-box-sizing: border-box; // Do not change
+		-webkit-box-sizing: border-box; // Do not change
+	}
+	
+	.col1,
+	.col2,
+	.col3,
+	.col4 {
+		.col2,
+		.col3,
+		.col4,
+		.col5,
+		.col6,
+		.col7,
+		.col8 {
+			padding-top: 0px;
+			padding-bottom: 0px;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+	
+	.col2 {
+		width: $half;
+		
+		&.span2 {
+			width: $half*2;
+		}
+		
+		&:nth-child(2n) + div {
+			clear: both;
+		}
+	}
+	
+	.col3 {
+		width: $third;
+		
+		&.span2 {
+			width: $third*2;
+		}
+		
+		&.span3 {
+			width: $third*3;
+		}
+		
+		&:nth-child(3n) + div {
+			clear: both;
+		}
+	}
+	
+	.col4 {
+		width: $quarter;
+		
+		&.span2 {
+			width: $quarter*2;
+		}
+		
+		&.span3 {
+			width: $quarter*3;
+		}
+		&.span4 {
+			width: $quarter*4;
+		}
+		
+		&:nth-child(4n) + div {
+			clear: both;
+		}
+	}
+	
+	.col5  {
+		width: $fifth;
+		
+		&.span2 {
+			width: $fifth*2;
+		}
+		
+		&.span3 {
+			width: $fifth*3;
+		}
+		
+		&.span4 {
+			width: $fifth*4;
+		}
+		
+		&.span5 {
+			width: $fifth*5;
+		}
+		
+		&:nth-child(5n) + div {
+			clear: both;
+		}
+	}
+	
+	.col6 {
+		width: $sixth;
+		
+		&.span2 {
+			width: $sixth*2;
+		}
+		
+		&.span3 {
+			width: $sixth*3;
+		}
+		
+		&.span4 {
+			width: $sixth*4;
+		}
+		
+		&.span5 {
+			width: $sixth*5;
+		}
+		
+		&.span6 {
+			width: $sixth*6;
+		}
+		
+		&:nth-child(6n) + div {
+			clear: both;
+		}
+	}
+	
+	.col7 {
+		width: $seventh;
+		
+		&.span2 {
+			width: $seventh*2;
+		}
+		
+		&.span3 {
+			width: $seventh*3;
+		}
+		
+		&.span4 {
+			width: $seventh*4;
+		}
+		
+		&.span5 {
+			width: $seventh*5;
+		}
+		
+		&.span6 {
+			width: $seventh*6;
+		}
+		
+		&.span7 {
+			width: $seventh*7;
+		}
+		
+		&:nth-child(7n) + div {
+			clear: both;
+		}
+	}
+	
+	.col8 {
+		width: $eighth;
+		
+		&.span2 {
+			width: $eighth*2;
+		}
+		
+		&.span3 {
+			width: $eighth*3;
+		}
+		
+		&.span4 {
+			width: $eighth*4;
+		}
+		
+		&.span5 {
+			width: $eighth*5;
+		}
+		
+		&.span6 {
+			width: $eighth*6;
+		}
+		
+		&.span7 {
+			width: $eighth*7;
+		}
+		
+		&.span8 {
+			width: $eighth*8;
+		}
+		
+		&:nth-child(8n) + div {
+			clear: both;
+		}
+	}
+	
+}

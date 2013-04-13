@@ -1,0 +1,22 @@
+/* line 16, ../sass/klipspringer-styles.scss */
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=password],
+input[type=date],
+input[type=datetime],
+input[type=month],
+input[type=search],
+input[type=color],
+input[type=range],
+input[type=time],
+input[type=url],
+input[type=week] {
+  max-width: 80%;
+}
+
+/* line 20, ../sass/klipspringer-styles.scss */
+textarea {
+  max-width: 100%;
+}

@@ -1,0 +1,22 @@
+// Form Styles
+
+.ssklip-wrapper-outer input[type=text],
+.ssklip-wrapper-outer input[type=email],
+.ssklip-wrapper-outer input[type=tel],
+.ssklip-wrapper-outer input[type=number],
+.ssklip-wrapper-outer input[type=password],
+.ssklip-wrapper-outer input[type=date],
+.ssklip-wrapper-outer input[type=datetime],
+.ssklip-wrapper-outer input[type=month],
+.ssklip-wrapper-outer input[type=search],
+.ssklip-wrapper-outer input[type=color],
+.ssklip-wrapper-outer input[type=range],
+.ssklip-wrapper-outer input[type=time],
+.ssklip-wrapper-outer input[type=url], 
+.ssklip-wrapper-outer input[type=week]{
+	max-width: 80%;
+}
+
+.ssklip-wrapper-outer textarea {
+	max-width: 100%;
+}
