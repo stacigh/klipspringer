@@ -1,14 +1,15 @@
 <br />
 <h3>To add Klipspringer from your WordPress installation:</h3>
+<?php
+echo '<img src="' . plugins_url( 'img/01-upload-plugin.png' , __FILE__ ) . '" > ';
+?>
 <ol>
-	<li>Download your purchased plugin file to your Desktop or other directory.</li>
-	<li>Extract the ss_klipspringer.zip file.</li>
+	<li>Download the plugin file to your Desktop or other directory.</li>
 	<li>Go to <b>Plugins &gt; Add New</b>.</li>
-	<li>Under <b>Upload</b>, click <b>Choose File</b>, navigate to Desktop/ss_klipspringer/klipspringer.zip and click <b>Install Now</b>.</li>
+	<li>Under <b>Upload</b>, click <b>Choose File</b>, navigate to klipspringer.zip and click <b>Install Now</b>.</li>
 	<li>After Klipspringer has been uploaded, click <b>Activate Plugin</b>.</li>
 </ol>
 &nbsp;
-
 <h3>Adding a Trigger Button</h3>
 
 <p>For the most part, Klipspringer is ready to use as soon as you install it. However, you will need to add a class name to any link on your site in order to trigger the slide down area.</p>
@@ -18,12 +19,19 @@
 <p><i>Adding Menu Item Trigger Button</i></p>
 
 <p>If you want your trigger to live in your global navigation menu, all you have to do is add a class to a new or existing menu item.</p>
+
+<?php
+echo '<img src="' . plugins_url( 'img/04-show-classes-box.png' , __FILE__ ) . '" > ';
+?>
 <ol>
 	<li>Go to <b>Appearance &gt; Menus</b>.</li>
 	<li>Click <b>Screen Options</b> in the upper right corner of your screen.</li>
 	<li>Check <b>CSS Classes</b> from Show advanced menu properties.</li>
 	<li>Add new menu item to, or choose an existing menu item from, your global navigation menu.</li>
 	<li>Click the down arrow for your chosen menu item.</li>
+	<?php
+echo '<img src="' . plugins_url( 'img/05-menu-item-class-name.png' , __FILE__ ) . '" > ';
+?>
 	<li>In the <b>CSS Classes(optional)</b> box enter <i>ssklip-button-open</i> as the class name.</li>
 	<li>Save your menu.</li>
 </ol>
@@ -39,15 +47,18 @@
 
 <p>&lt;div class="button <b>ssklip-button-open</b>"&gt;</p>
 
-&nbsp;
+<?php
+echo '<img src="' . plugins_url( 'img/06-add-class-to-existing-button.png' , __FILE__ ) . '" > ';?>
 
 <p><i>Adding Trigger to Shortcode</i></p>
 
 <p>In some cases you may be able to add a trigger to an object created by a short code. If you are able to pass a class into your short code, you are able to use it as a trigger. For example:</p>
 
-<p>[button]This is your button text[/button]</p>
+<p>[button class="ssklip-button-open"]This is your button text[/button]</p>
 
-&nbsp;
+<?php
+echo '<img src="' . plugins_url( 'img/07-open-buttons-front-end.png' , __FILE__ ) . '" > ';
+?>
 
 <h3>Adding Content to Klipspringer</h3>
 <ol>
@@ -68,11 +79,16 @@
 
 <p><i>Accessibility Options</i></p>
 
-By defaolt, Klipspringer is set to close 3 different ways.
+By default, Klipspringer is set to close 3 different ways.
 <ol>
 	<li>Close Button: Enables a little button that the user can click to close the opened panel.</li>
 	<li>ESC Key Press: Enables the user to exit the opened panel by pressing the ESC key.</li>
-	<li>Window Scroll: Enables the user to exit the opened panel by simply scrolling with their mouse.</li>
+	<li>Window Scroll: Enables the user to exit the opened panel by simply scrolling with their mouse.
+		<ul>
+			<li>Note: If you have a high amount of mobile traffic, it's best that you do not use Window Scroll to close Klipspringer.
+			</li>
+		</ul>
+	</li>
 </ol>
 &nbsp;
 
@@ -127,40 +143,40 @@ By defaolt, Klipspringer is set to close 3 different ways.
 
 <dl>
 	<dt><strong>.ssklip-wrapper-outer { }</strong></dt>
-	<dd>This is some text</dd>
+	<dd>The outer container that controls the width and the height of the wrapper.</dd>
 </dl>
 
 <dl>
 	<dt><strong>.ssklip-wrapper-inner { }</strong></dt>
-	<dd>This is some text</dd>
+	<dd>The inner container that controls the width and height of the widget fields.</dd>
 </dl>
 
 <dl>
 	<dt><strong>.ssklip-button-open { }</strong></dt>
-	<dd>This is some text</dd>
+	<dd>The trigger button. If your trigger is part of a navigation menu, you should avoid applying styles to the button. If your trigger is a button on a page, feel free to style away. Klipspringer is packaged assuming you will be using the navigation bar to open the widget area and does not include styles for the button.</dd>
 </dl>
 
 <dl>
 	<dt><strong>.ssklip-button-close { }</strong></dt>
-	<dd>This is some text</dd>
+	<dd>This is the button inside the widget area that will close your widget area.</dd>
 </dl>
 
 <dl>
 	<dt><strong>.ssklip-wrapper-inner .col1 { }</strong></dt>
-	<dd>This is some text</dd>
+	<dd>The first column.</dd>
 </dl>
 
 <dl>
 	<dt><strong>.ssklip-wrapper-inner .col2 { }</strong></dt>
-	<dd>This is some text</dd>
+	<dd>The second column. This is disabled if you choose 1 column in the settings for Klipspringer.</dd>
 </dl>
 
 <dl>
 	<dt><strong>.ssklip-wrapper-inner .col3 { }</strong></dt>
-	<dd>This is some text</dd>
+	<dd>The third column. Disabled in 1 and 2 column layouts as defined in the plugin settings.</dd>
 </dl>
 
 <dl>
 	<dt><strong>.ssklip-wrapper-inner .col4 { }</strong></dt>
-	<dd>This is some text</dd>
+	<dd>The fourth column. Disabled in 1, 2 and 3 column layouts as defined in the plugin settings.</dd>
 </dl>

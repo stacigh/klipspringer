@@ -58,9 +58,6 @@ function ssklip_global_js_vars() {
 	global $ssklip_options_customstyles;
 	
 	
-	// Echo Custom styles
-	echo '<style>'.$ssklip_options_customstyles['styles'].'</style>';
-	
 	// Local variables
 	$btn_pos = $ssklip_options_closebutton['button_position'];
 	
@@ -133,6 +130,9 @@ function ssklip_global_js_vars() {
 				}
 			</style>';
 	}
+	
+	// Echo Custom styles
+	echo '<style>'.$ssklip_options_customstyles['styles'].'</style>';
 	
 	// ESC key enabled/disabled
 	// Set variable with appropriate state
