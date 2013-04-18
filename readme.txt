@@ -36,10 +36,6 @@ Use Cases:
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. Upload the folder `klipspringer` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Change settings from the Settings>Klipspringer Options menu
@@ -61,18 +57,12 @@ Yes! I'm using Github for this project. If you find a bug, let me know! If you w
 == Screenshots ==
 
 1. Custom styled trigger button
-2. Use Klipspringer as a shopping cart! Works with WP Commerce
-3. Use Klispringer to display login information instead of redirecting to a login screen.
+1. Use Klipspringer as a shopping cart! Works with WP Commerce
+1. Use Klispringer to display login information instead of redirecting to a login screen.
 
 
 == Changelog ==
 
 = 1.0 =
 * Initial upload
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
 
