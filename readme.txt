@@ -14,13 +14,13 @@ A slide-down widgetized area for your WordPress website which can be used for an
 
 Klipspringer is a stow and go widgetized area that works with any theme. It allows you to extend your website to store information that doesn't require it's own page and may clutter your layout. It can be triggered by a button in the navigation menu or any button on your site. 
 
-Features: 
+= Features =
 * Fully documented; including a codex for classes used for additional styling purposes.
 * Closes via window scroll, ESC key press or by clicking on a close button; all of which can be disabled easily.
 * Fully customizable. Adjust the width, height, position of the close button, number of columns, colors, and more.
 * Fully responsive
 
-Use Cases:
+= Use Cases =
 * Contact Forms
 * Maps and Directions
 * Social feeds
