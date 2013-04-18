@@ -57,7 +57,7 @@ Yes! I'm using Github for this project. If you find a bug, let me know! If you w
 == Screenshots ==
 
 1. Custom styled trigger button
-1. Use Klipspringer as a shopping cart! Works with WP Commerce
+1. Use Klipspringer as a shopping cart!
 1. Use Klispringer to display login information instead of redirecting to a login screen.
 
 
